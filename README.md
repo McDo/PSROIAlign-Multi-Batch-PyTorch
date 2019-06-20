@@ -24,13 +24,14 @@ import torch.nn as nn
 from model.roi_layers import PSROIAlign
 ```
 
-Args<br />
-**spatial_scale**: stride of the backbone<br />
-**roi_size**: output size of the pooled feature<br />
-**sample_ratio**: sample ratio of bilinear interpolation<br />
-**pooled_dim**: output channel of the pooled feature<br />
 ```python
 class PSROIAlignExample(nn.Module):
+    """
+    :spatial_scale: stride of the backbone
+    :roi_size:      output size of the pooled feature
+    :sample_ratio:  sample ratio of bilinear interpolation
+    :pooled_dim:    output channel of the pooled feature
+    """
     def __init__(self,
                  spatial_scale=1./16.,
                  roi_size=7,
