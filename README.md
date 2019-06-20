@@ -24,7 +24,7 @@ import torch.nn as nn
 from model.roi_layers import PSROIAlign
 ```
 
-Args
+Args<br />
 **spatial_scale**: stride of the backbone<br />
 **roi_size**: output size of the pooled feature<br />
 **sample_ratio**: sample ratio of bilinear interpolation<br />
