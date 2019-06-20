@@ -48,7 +48,7 @@ class PSROIAlignExample(nn.Module):
         return self.psroialign(feat, rois)
 ```
 
-### Feature Map to be pooled
+#### Feature Map to be pooled
 ```python
 batch_size = 4
 feat_height = 30
@@ -63,7 +63,7 @@ feature = torch.randn((batch_size,
                        requires_grad=True).cuda()
 ```
 
-### RoIs should be formatted as **(batch_index, x1, y1, x2, y2)**
+#### RoIs should be formatted as **(batch_index, x1, y1, x2, y2)**
 ```python
 rois = torch.tensor([
     [0, 1., 1., 5., 5.],
@@ -73,12 +73,12 @@ rois = torch.tensor([
 ]).cuda()
 ```
 
-### Essential Job
+#### Essential Job
 ```python
 psroialign_pooled_feat = psroialign_example(feature, rois)
 ```
 
-### Play with ***example.py*** to get more details.
+#### Play with ***example.py*** to get more details.
 
 
 ## License
