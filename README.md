@@ -56,10 +56,10 @@ roi_size = 7
 oup_dim = 10
 
 feature = torch.randn((batch_size,
-                        roi_size * roi_size * oup_dim,
-                        feat_height,
-                        feat_width),
-                        requires_grad=True).cuda()
+                       roi_size * roi_size * oup_dim,
+                       feat_height,
+                       feat_width),
+                       requires_grad=True).cuda()
 ```
 
 ROIs should be formatted as **(batch_index, x1, y1, x2, y2)**
