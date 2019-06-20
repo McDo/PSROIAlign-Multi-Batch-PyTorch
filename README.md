@@ -1,5 +1,5 @@
 # PSROIAlign with multi-batch training support - PyTorch
-Position-Sensitive-Region-of-Interests-Alignment has been wildly used throughout numerous well known deep object detectors, s.t. [R-FCN](https://arxiv.org/pdf/1605.06409.pdf), [LightHead R-CNN](https://arxiv.org/pdf/1711.07264.pdf), etc. However there are not that much implementations support multi-batch training in the world of PyTorch. With just one image per GPU, models would be hardly aware of the statistical information of the training data especially in cases that rarely one or two GPUs at hand.
+**Position-Sensitive-Region-of-Interests-Alignment** has been wildly used throughout numerous well known deep object detectors, s.t. [R-FCN](https://arxiv.org/pdf/1605.06409.pdf), [LightHead R-CNN](https://arxiv.org/pdf/1711.07264.pdf), etc. However there are not that much implementations support multi-batch training in the world of PyTorch. With just one image per GPU, models would be hardly aware of the statistical information of the training data especially in cases that rarely one or two GPUs at hand.
 
 This CUDA based implementation fully supports mult-batch training, and can be easily integrated into your PyTorch object detectors.
 
