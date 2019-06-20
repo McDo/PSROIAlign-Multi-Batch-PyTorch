@@ -78,7 +78,8 @@ rois = torch.tensor([
 psroialign_pooled_feat = psroialign_example(feature, rois)
 ```
 
-#### Play with ***example.py*** to get more details.
+
+Play with ***example.py*** to get more details.
 
 
 ## License
